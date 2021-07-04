@@ -1,1 +1,1 @@
-# counter-app
+# NextJS Super Template
