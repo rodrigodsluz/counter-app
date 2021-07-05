@@ -7,32 +7,36 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  @media (max-width: 1000px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    font: 400 1.6rem Archivo, sans-serif;
-  }
-
-  :root {
-    font-size: 60% ;
-  }
-
-  html, body, #root {
-    height: 100vh;
   }
 
   body,
   input,
-  button,
-  textarea {
-    font: 500 1.6rem Poppins;
-    color: ${(props) => props.theme.colors.colorTextBase};
+  textarea,
+  button {
+    font: 400 1rem "Inter", sans-serif;
   }
 
-  @media (min-width: 700px) {
-    :root {
-      font-size: 62.5%;
-    }
+  button {
+    cursor: pointer;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
