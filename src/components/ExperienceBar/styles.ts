@@ -1,17 +1,13 @@
 import styled from 'styled-components';
 import { grayLine, green, white } from '../../styles/Theme/colors';
 
-interface ProgressLevelProps {
-  Left: number;
-}
-
-interface ExperienceBarProgressProps {
-  ProgressLevel: number;
-}
-
 export const Container = styled.header`
   display: flex;
   align-items: center;
+`;
+
+export const MinExperienceLevel = styled.span`
+  font-size: 1rem;
 `;
 
 export const ExperienceBar = styled.header`
@@ -23,9 +19,9 @@ export const ExperienceBar = styled.header`
   position: relative;
 `;
 
-export const MinExperienceLevel = styled.span`
-  font-size: 1rem;
-`;
+interface ExperienceBarProgressProps {
+  ProgressLevel: number;
+}
 
 export const ExperienceBarProgress = styled.div<ExperienceBarProgressProps>`
   height: 4px;
@@ -34,6 +30,10 @@ export const ExperienceBarProgress = styled.div<ExperienceBarProgressProps>`
   transition: width 0.5s ease-in-out;
   width: ${(props) => props.ProgressLevel && `${props.ProgressLevel}%`};
 `;
+
+interface ProgressLevelProps {
+  Left: number;
+}
 
 export const ProgressLevel = styled.span<ProgressLevelProps>`
   position: absolute;
@@ -48,6 +48,8 @@ export const ProgressLevel = styled.span<ProgressLevelProps>`
   color: ${white};
   width: 5rem;
   text-align: center;
+
+  /* Rodrigo */
   &::before {
     content: "";
     width: 10px;
