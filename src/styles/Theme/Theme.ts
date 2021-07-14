@@ -1,12 +1,9 @@
 const Theme = {
   colors: {
-    background: '#b8b8b8',
-    text: '#6A6180',
-    primary: '#8257e6',
-    colorTextBase: '#6A6180',
-    navbarBackground: '#101522',
-    navbarText: '#fff',
-    signUpBtn: 'blue',
+    primary: '#C62E65',
+    secundary: '#D63AF9',
+    background: '#f2f3f5',
+    text: '#666',
   },
 };
 
