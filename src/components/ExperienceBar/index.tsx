@@ -1,5 +1,4 @@
 import * as S from './styles';
-import { GlobalContainer } from '../../styles/Global';
 
 /**
  * @export
@@ -10,7 +9,6 @@ import { GlobalContainer } from '../../styles/Global';
  * Experience Bar component
  */
 const ExperienceBar = (): JSX.Element => (
-  <GlobalContainer>
     <S.Container>
       <S.MinExperienceLevel>0 xp</S.MinExperienceLevel>
       <S.ExperienceBar>
@@ -22,7 +20,6 @@ const ExperienceBar = (): JSX.Element => (
       </S.ExperienceBar>
       <S.MaxExperienceLevel>600 xp</S.MaxExperienceLevel>
     </S.Container>
-  </GlobalContainer>
 );
 
 export default ExperienceBar;

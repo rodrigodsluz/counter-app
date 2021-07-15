@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ExperienceBar from '@components/ExperienceBar';
+import { GlobalContainer } from '../../styles/Global';
 
 /**
  * @export
@@ -11,10 +12,12 @@ import ExperienceBar from '@components/ExperienceBar';
  */
 const IndexScreen = (): JSX.Element => (
   <>
-    <Head>
-      <title>Counter App</title>
-    </Head>
-    <ExperienceBar />
+    <GlobalContainer>
+      <Head>
+        <title>Counter App</title>
+      </Head>
+      <ExperienceBar />
+    </GlobalContainer>
   </>
 );
 
