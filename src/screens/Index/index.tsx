@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ExperienceBar from '@components/ExperienceBar';
+import Profile from '@components/Profile';
 import { GlobalContainer, WrapperContent } from '../../styles/Global';
 
 /**
@@ -20,7 +21,9 @@ const IndexScreen = (): JSX.Element => (
       <ExperienceBar />
 
       <WrapperContent>
-        <div>Profile Completed Challenges Countdown</div>
+        <div>
+          <Profile /> Completed Challenges Countdown
+        </div>
 
         <div>Challenge box</div>
       </WrapperContent>
